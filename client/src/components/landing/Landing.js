@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react'
-import { Hidden } from '@material-ui/core'
+import { Hidden, Grid } from '@material-ui/core'
 import Navbar from '../layout/Navbar'
 import Drawer from '../layout/Drawer'
+import Login from '../auth/Login'
 
 const Landing = () => {
 	return (
@@ -13,7 +14,9 @@ const Landing = () => {
 				<Drawer />
 			</Hidden>
 
-			<div>Landing page.</div>
+			<Grid container>
+				<Login />
+			</Grid>
 		</Fragment>
 	)
 }
