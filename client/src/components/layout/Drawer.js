@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
 	toolbar: {
 		display: 'flex',
 	},
+	heading: {
+		color: '#000',
+	},
 	btns: {
 		marginLeft: 'auto',
 	},
@@ -266,12 +269,13 @@ export default function SwipeableTemporaryDrawer() {
 					<IconButton
 						edge='start'
 						className={classes.menuButton}
-						color='inherit'
 						aria-label='menu'
 						onClick={toggleDrawer('left', true)}>
 						<DehazeIcon />
 					</IconButton>
-					<Typography variant='h5'>Lak</Typography>
+					<Typography variant='h5' className={classes.heading}>
+						Lak
+					</Typography>
 					<SwipeableDrawer
 						anchor={'left'}
 						open={state['left']}
