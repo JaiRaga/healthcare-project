@@ -7,6 +7,8 @@ import { Provider } from 'react-redux'
 
 // Components imported for Routes
 import Landing from './components/landing/Landing'
+import Login from './components/auth/Login'
+import Register from './components/auth/Register'
 
 // Redux
 import store from './redux/store'
@@ -36,20 +38,20 @@ function App() {
 					<Route exact path='/' component={Landing} />
 
 					<Switch>
-						{/* <Route exact path='/register' component={Register} />
-            <Route exact path='/Login' component={Login} />
-            <PrivateRoute exact path='/profile' component={ProfileContainer} />
-            <PrivateRoute exact path='/profile/:id' component={Profile} />
-            <PrivateRoute exact path='/profiles' component={Profiles} />
-            <PrivateRoute exact path='/dashboard' component={Dashboard} />
-            <PrivateRoute
-              exact
-              path='/dashboard/social'
-              component={SocialDashboard}
-            />
-            <PrivateRoute exact path='/followers' component={Followers} />
-            <PrivateRoute exact path='/following' component={Following} />
-            <PrivateRoute exact path='/setting' component={Setting} /> */}
+						<Route exact path='/register' component={Register} />
+						<Route exact path='/Login' component={Login} />
+						{/* <PrivateRoute exact path='/profile' component={ProfileContainer} />
+						<PrivateRoute exact path='/profile/:id' component={Profile} />
+						<PrivateRoute exact path='/profiles' component={Profiles} />
+						<PrivateRoute exact path='/dashboard' component={Dashboard} />
+						<PrivateRoute
+							exact
+							path='/dashboard/social'
+							component={SocialDashboard}
+						/>
+						<PrivateRoute exact path='/followers' component={Followers} />
+						<PrivateRoute exact path='/following' component={Following} />
+						<PrivateRoute exact path='/setting' component={Setting} /> */}
 					</Switch>
 				</Fragment>
 			</Router>
