@@ -56,10 +56,10 @@ const useStyles = makeStyles((theme) => ({
 	},
 	link: {
 		textDecoration: 'none',
-		color: '#1976d2',
+		color: '#312c51',
 	},
 	icons: {
-		color: '#1976d2',
+		color: '#fff',
 		minWidth: '35px',
 		paddingRight: 20,
 	},
